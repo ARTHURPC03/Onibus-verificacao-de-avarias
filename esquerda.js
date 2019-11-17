@@ -26,7 +26,6 @@ function janela1(e) {
 
        document.getElementById("container").appendChild(span);
        
-       
        if(!clicado1){
         valores.push('janela 1')
         clicado1 = true
