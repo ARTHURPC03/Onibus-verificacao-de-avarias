@@ -26,7 +26,7 @@ function janela1() {
 var clicado2 = false
 function janela2() {
      var img2 = document.createElement('img')
-    img2.setAttribute('src','traseira.png')
+    img2.setAttribute('src','Traseira.png')
     
     res2.style.textAlign = 'left'
     res2.innerHTML = ``
@@ -55,7 +55,7 @@ function janela2() {
 var clicado3 = false
 function janela3(){
     var img3 = document.createElement('img')
-     img3.setAttribute('src','direita.png') 
+     img3.setAttribute('src','Direita.png') 
     res3.style.textAlign = 'center'
     res3.innerHTML = ``
 
