@@ -14,8 +14,13 @@ function janela1() {
         resultado.appendChild(imagem)
         
     }else{
-        valores.pop()
+        
         clicado1 = false
+        
+        var index = valores.indexOf('janela 1')
+           if( index > -1){
+           valores.splice(index,1)
+           }
         
     }
     
@@ -39,11 +44,12 @@ function janela2() {
  
 
      }else{
-         //valores.pop()
+         
          clicado2 = false
-         var index = valores.indexOf(janela1)
-            if( index > -1){
-                valores.splice(index,1)
+        
+         var index2 = valores.indexOf('janela 2')
+            if( index2 > -1){
+            valores.splice(index2,1)
             }
         
 
@@ -65,8 +71,13 @@ function janela3(){
     res3.appendChild(img3)
     
     }else{
-    valores.pop()
     clicado3 = false
+    
+    var index3 = valores.indexOf('janela 3')
+       if( index3 > -1){
+       valores.splice(index3,1)
+       }
+
 }
     
     
@@ -102,11 +113,20 @@ function limpar(){
 }
 
 function continuar(){
-valores = valores.filter((este, i) => valores.indexOf(este) === i)
+//valores = valores.filter((este, i) => valores.indexOf(este) === i)
   
-    let resultado = valores
+    //let resultado = valores
 
- window.alert(`${resultado}.`)
+ //window.alert(`${resultado}.`)
+if(valores.length > 1){
+window.alert(`Detectamos avarias nas seguintes partes: ${valores}`)    
+}
+if(valores.length == 1){
+window.alert(`Uma avaria foi detectada na seguinte parte: ${valores}`)
+}
 
-    
+if(valores.length == 0){
+    window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e preencha novamente!`)
+    }
+
 }
