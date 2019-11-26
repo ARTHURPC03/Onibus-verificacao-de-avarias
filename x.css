@@ -23,28 +23,3 @@ footer {
     text-align: center;
     font-style: italic;
 }
-#container{
-    width: 630px;
-    height: 354px;
-    position: relative;
- }
- 
- .clip{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: red;
-    position: absolute;
-    top: 0px;
-    left: 0px;
- }
- .clip1{
-    
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 0, 0);
-    position: absolute;
-    top: 0px;
-    left: 0px;
- }
