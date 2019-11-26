@@ -2,9 +2,12 @@ let valores = []
 
 var clicado1 = false
 
+var imagem = document.createElement('img')
+var resultado = document.querySelector('#res') 
+
 function janela1() {
-        var imagem = document.createElement('img')
-        var resultado = document.querySelector('#res') 
+        
+        
         imagem.setAttribute('src','Janela1.png')
         resultado.style.textAlign = 'left'
         resultado.innerHTML = ``
@@ -14,8 +17,13 @@ function janela1() {
         resultado.appendChild(imagem)
         
     }else{
-        valores.pop()
+        
         clicado1 = false
+        
+        var index = valores.indexOf('janela 1')
+           if( index > -1){
+           valores.splice(index,1)
+           }
         
     }
     
@@ -24,9 +32,13 @@ function janela1() {
 }
 
 var clicado2 = false
+
+var img2 = document.createElement('img')
+var res2 = document.querySelector('#res2')
+
 function janela2() {
-     var img2 = document.createElement('img')
-    img2.setAttribute('src','traseira.png')
+     
+    img2.setAttribute('src','Traseira.png')
     
     res2.style.textAlign = 'left'
     res2.innerHTML = ``
@@ -39,9 +51,14 @@ function janela2() {
  
 
      }else{
-         valores.pop()
+         
          clicado2 = false
-
+        
+         var index2 = valores.indexOf('janela 2')
+            if( index2 > -1){
+            valores.splice(index2,1)
+            }
+        
 
      }
 
@@ -49,9 +66,13 @@ function janela2() {
 }
 
 var clicado3 = false
+
+var img3 = document.createElement('img')
+var res3 = document.querySelector('#res3')
+
 function janela3(){
-    var img3 = document.createElement('img')
-     img3.setAttribute('src','direita.png') 
+    
+    img3.setAttribute('src','Direita.png') 
     res3.style.textAlign = 'center'
     res3.innerHTML = ``
 
@@ -61,8 +82,13 @@ function janela3(){
     res3.appendChild(img3)
     
     }else{
-    valores.pop()
     clicado3 = false
+    
+    var index3 = valores.indexOf('janela 3')
+       if( index3 > -1){
+       valores.splice(index3,1)
+       }
+
 }
     
     
@@ -90,19 +116,35 @@ function lado1(){
 }
 
 function limpar(){
-   
-    valores.length = 0
+    if(clicado1 == true){
+    resultado.removeChild(imagem)
+    } // lembrar de adicionar o removeChield para cada função 
+    if(clicado2 == true){
+    res2.removeChild(img2)    
+    }
+    if(clicado3 == true){
+    res3.removeChild(img3)  
+    }
     
-    clicado1 = false 
+    
+    
+    clicado1 = false //lembrar de adicionar a varável  "clicado..." de cada função
+    clicado2 = false 
+    clicado3 = false 
 
+
+    valores.length = 0
 }
 
 function continuar(){
-valores = valores.filter((este, i) => valores.indexOf(este) === i)
-  
-    let resultado = valores
+    if(valores.length > 1){
+        window.alert(`Detectamos avarias nas seguintes partes: ${valores}`)    
+    }
+    if(valores.length == 1){
+        window.alert(`Uma avaria foi detectada na seguinte parte: ${valores}`)
+    }   
+    if(valores.length == 0){
+        window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e preencha novamente!`)
+    }
 
- window.alert(`${resultado}.`)
-
-    
 }
