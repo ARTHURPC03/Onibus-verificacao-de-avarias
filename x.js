@@ -116,9 +116,16 @@ function lado1(){
 }
 
 function limpar(){
-    resultado.removeChild(imagem) // lembrar de adicionar o removeChield para cada função 
-    res2.removeChild(img2)
-    res3.removeChild(img3)
+    if(clicado1 == true){
+    resultado.removeChild(imagem)
+    } // lembrar de adicionar o removeChield para cada função 
+    if(clicado2 == true){
+    res2.removeChild(img2)    
+    }
+    if(clicado3 == true){
+    res3.removeChild(img3)  
+    }
+    
     
     
     clicado1 = false //lembrar de adicionar a varável  "clicado..." de cada função
