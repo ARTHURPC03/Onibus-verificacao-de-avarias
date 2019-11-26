@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lado Esquerdo</title>
-    <link rel="stylesheet" href="esquerda.css">
+    <link rel="stylesheet" href="x.css">
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
         <div id="container">
             <img src="Esquerda.png" alt="" usemap="#Map" />
             <map name="Map" id="Map">
-                <area onclick="janela1(event)" alt="" title="Janela 1" href="#" shape="poly" coords="58,138,131,116,136,56,123,44,60,43,51,60,48,94,48,120,50,136" />
-                <area onclick="janela2(event)" alt="" title="Janela 2" href="#" shape="poly" coords="161,106,164,45,265,46,267,108" />
+                <area onclick="janela1()" alt="" title="Janela 1" href="#" shape="poly" coords="58,138,131,116,136,56,123,44,60,43,51,60,48,94,48,120,50,136" />
+                <area onclick="janela2()" alt="" title="Janela 2" href="#" shape="poly" coords="161,106,164,45,265,46,267,108" />
                 <area alt="" title="Janela 3" href="javascript:janela3()" shape="poly" coords="278,105,280,48,381,50,384,108" />
                 <area alt="" title="Janela 4" href="javascript:janela4()" shape="poly" coords="393,107,394,47,496,51,500,108" />
                 <area alt="" title="Janela 5" href="javascript:janela5()" shape="poly" coords="509,112,511,47,610,50,613,110" />
@@ -41,16 +41,20 @@
                
             </map>
         </div>
+        
 
         <div id = "dados">
             <input type="button" value="Limpar" onclick="limpar()">
         <input type="button" value="Continuar" onclick="continuar()">
+        </div>
+        <div id = "res">
+            
         </div>
         
     </section>
     <footer>
         <p>&copy; ARTHURPC</p>
     </footer>
-    <script src="esquerda.js"></script>
+    <script src="x.js"></script>
 </body>
 </html>
