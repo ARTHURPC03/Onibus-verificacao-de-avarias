@@ -2,9 +2,12 @@ let valores = []
 
 var clicado1 = false
 
+var imagem = document.createElement('img')
+var resultado = document.querySelector('#res') 
+
 function janela1() {
-        var imagem = document.createElement('img')
-        var resultado = document.querySelector('#res') 
+        
+        
         imagem.setAttribute('src','Janela1.png')
         resultado.style.textAlign = 'left'
         resultado.innerHTML = ``
@@ -29,8 +32,12 @@ function janela1() {
 }
 
 var clicado2 = false
+
+var img2 = document.createElement('img')
+var res2 = document.querySelector('#res2')
+
 function janela2() {
-     var img2 = document.createElement('img')
+     
     img2.setAttribute('src','Traseira.png')
     
     res2.style.textAlign = 'left'
@@ -59,9 +66,13 @@ function janela2() {
 }
 
 var clicado3 = false
+
+var img3 = document.createElement('img')
+var res3 = document.querySelector('#res3')
+
 function janela3(){
-    var img3 = document.createElement('img')
-     img3.setAttribute('src','Direita.png') 
+    
+    img3.setAttribute('src','Direita.png') 
     res3.style.textAlign = 'center'
     res3.innerHTML = ``
 
@@ -105,28 +116,28 @@ function lado1(){
 }
 
 function limpar(){
-   
-    valores.length = 0
+    resultado.removeChild(imagem) // lembrar de adicionar o removeChield para cada função 
+    res2.removeChild(img2)
+    res3.removeChild(img3)
     
-    clicado1 = false 
+    
+    clicado1 = false //lembrar de adicionar a varável  "clicado..." de cada função
+    clicado2 = false 
+    clicado3 = false 
 
+
+    valores.length = 0
 }
 
 function continuar(){
-//valores = valores.filter((este, i) => valores.indexOf(este) === i)
-  
-    //let resultado = valores
-
- //window.alert(`${resultado}.`)
-if(valores.length > 1){
-window.alert(`Detectamos avarias nas seguintes partes: ${valores}`)    
-}
-if(valores.length == 1){
-window.alert(`Uma avaria foi detectada na seguinte parte: ${valores}`)
-}
-
-if(valores.length == 0){
-    window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e preencha novamente!`)
+    if(valores.length > 1){
+        window.alert(`Detectamos avarias nas seguintes partes: ${valores}`)    
+    }
+    if(valores.length == 1){
+        window.alert(`Uma avaria foi detectada na seguinte parte: ${valores}`)
+    }   
+    if(valores.length == 0){
+        window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e preencha novamente!`)
     }
 
 }
