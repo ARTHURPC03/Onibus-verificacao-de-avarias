@@ -39,9 +39,13 @@ function janela2() {
  
 
      }else{
-         valores.pop()
+         //valores.pop()
          clicado2 = false
-
+         var index = valores.indexOf(janela1)
+            if( index > -1){
+                valores.splice(index,1)
+            }
+        
 
      }
 
