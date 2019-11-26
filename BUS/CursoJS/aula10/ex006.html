@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+
+    <style>
+    div#area {
+      
+        font: normal 20pt Arial;
+        background: rgb(28, 201, 28);
+        color: white;
+        width: 400px;
+        height: 400px; 
+        line-height: 400px;
+        text-align:center;
+    }
+    div#area2{
+        font: normal 20pt arial;
+        background: rgb(13, 199, 206);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+
+    </div>
+    <div id ="area2">
+    olá
+    </div> 
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar() {
+         a.innerText = 'O cara!'
+        a.style.background= 'grey'
+        }
+
+        function entrar() {
+            a.innerText = 'Leandro!'
+            a.style.background= 'pink'
+        }
+        function sair() {
+            a.innerText= 'Da serra elétrica!'
+            a.style.background = 'red'
+        }
+        
+        var b = window.document.getElementById('area2')
+        b.addEventListener('click', clicar2)
+        b.addEventListener('mouseenter', entrar2)
+        b.addEventListener('mouseout', sair2)
+      
+        function clicar2() {
+        b.innerText = 'Clicou!'
+        b.style.background ='red'
+        }
+
+        function entrar2() {
+            b.innerText = 'Entrou!'
+
+        }
+        function sair2() {
+            b.innerText= 'Saiu!'
+            b.style.background = 'black'
+        }
+
+    </script>
+
+</body>
+</html>

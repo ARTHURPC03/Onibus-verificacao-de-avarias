@@ -1,0 +1,3 @@
+Number(n)
+String(n)
+n.toString()

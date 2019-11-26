@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Identificação de país</title>
+</head>
+<body>
+<h1>País</h1>
+Seu país: <input type="text" name="textp" id="textp">
+<input type="button" value="Verificar" onclick= "calcular()">
+
+
+<div id="res">
+
+</div>
+    <script>
+    function calcular(){
+    var textp = window.document.querySelector('input#textp')
+    var res = window.document.querySelector('div#res')
+    var país = (textp.value)
+    res.innerHTML = `Seu país é <strong>${país}!</strong>`
+   
+    if(país =='Brasil'){
+            res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`
+        }else {
+            res.innerHTML += `<p>Você é <strong>estrangeiro!</strong></p>`
+        }
+
+
+
+}
+
+
+        
+    </script>
+</body>
+</html>

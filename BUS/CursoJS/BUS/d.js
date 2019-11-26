@@ -1,0 +1,1 @@
+alert('Olá,você clicou na traseira do ônibus!')
