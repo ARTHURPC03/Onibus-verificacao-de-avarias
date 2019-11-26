@@ -3,38 +3,72 @@ let valores = []
 var clicado1 = false
 
 function janela1() {
-       if(!clicado1){
+        var imagem = document.createElement('img')
+        var resultado = document.querySelector('#res') 
+        imagem.setAttribute('src','Janela1.png')
+        resultado.style.textAlign = 'left'
+        resultado.innerHTML = ``
+    if(!clicado1){
         valores.push('janela 1')
         clicado1 = true
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
-        img.setAttribute('src','frente.png')
+        resultado.appendChild(imagem)
         
     }else{
         valores.pop()
         clicado1 = false
         
-        
     }
-    res.style.textAlign = 'center'
-    res.innerHTML = `Detectamos as seguintes avarias:`
-    res.appendChild(img)
+    
+    
+  
 }
 
 var clicado2 = false
 function janela2() {
+     var img2 = document.createElement('img')
+    img2.setAttribute('src','traseira.png')
+    
+    res2.style.textAlign = 'left'
+    res2.innerHTML = ``
 
      if(!clicado2){
          valores.push('janela 2')
-         clicado2 = true
+        clicado2 = true
+        res2.appendChild(img2)
+  
+ 
+
      }else{
          valores.pop()
          clicado2 = false
+
+
      }
+
+    
 }
 
+var clicado3 = false
 function janela3(){
+    var img3 = document.createElement('img')
+     img3.setAttribute('src','direita.png') 
+    res3.style.textAlign = 'center'
+    res3.innerHTML = ``
+
+    if(!clicado3){
     valores.push('janela 3')
+    clicado3 = true
+    res3.appendChild(img3)
+    
+    }else{
+    valores.pop()
+    clicado3 = false
+}
+    
+    
+    
+
+
 }
 function janela4(){
     valores.push('janela 4')  
@@ -56,6 +90,7 @@ function lado1(){
 }
 
 function limpar(){
+   
     valores.length = 0
     
     clicado1 = false 
