@@ -26,9 +26,6 @@ function janela1() {
            }
         
     }
-    
-    
-  
 }
 
 var clicado2 = false
@@ -138,13 +135,13 @@ function limpar(){
 
 function continuar(){
     if(valores.length > 1){
-        window.alert(`Detectamos avarias nas seguintes partes: ${valores}`)    
+        window.alert(`Detectamos avarias nas seguintes partes: 👉🏻${valores}`)    
     }
     if(valores.length == 1){
-        window.alert(`Uma avaria foi detectada na seguinte parte: ${valores}`)
+        window.alert(`Uma avaria foi detectada na seguinte parte: 👉🏻${valores}`)
     }   
     if(valores.length == 0){
-        window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e preencha novamente!`)
+        window.alert(`Nenhuma avaria foi detectada! Por favor preencha os dados e tente novamente!`)
     }
 
 }
