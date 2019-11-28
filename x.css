@@ -23,6 +23,11 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+h2{
+    text-align: center;
+}
+
 .bt {
     border:1px solid #25692A;
     border-radius:4px;
