@@ -14,7 +14,7 @@
     <section>
         <h2>Clique no local da avaria👇🏻:</h2>
         <div id="container">
-            <img src="Esquerda.png" alt="" usemap="#Map" />
+            <img src="esquerda.png" alt="" usemap="#Map" />
             <map name="Map" id="Map">
                 <area onclick="janela1()" alt="" title="Janela 1" href="#" shape="poly" coords="58,138,131,116,136,56,123,44,60,43,51,60,48,94,48,120,50,136" />
                 <area onclick="janela2()" alt="" title="Janela 2" href="#" shape="poly" coords="161,106,164,45,265,46,267,108" />
@@ -55,6 +55,16 @@
         <div id = "res2">
             
         </div>
+<<<<<<< HEAD:x.html
+=======
+        <div id = "res">
+            
+        </div>
+        
+        <div id = "res2">
+            
+        </div>
+>>>>>>> master:esquerda.html
         <div id = "res3">
             
         </div>

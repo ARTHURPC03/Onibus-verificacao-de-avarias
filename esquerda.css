@@ -23,7 +23,9 @@ footer {
     text-align: center;
     font-style: italic;
 }
-
+h1{
+    text-align: center;
+}
 h2{
     text-align: center;
 }
@@ -62,4 +64,11 @@ h2{
 
 .bt-continuar:hover {
     background:linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
-    }        
+    }       
+
+#resultados{
+    text-align: center;
+}
+.resultados{
+    display: inline-block;
+}
