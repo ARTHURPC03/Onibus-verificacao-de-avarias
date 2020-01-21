@@ -14,43 +14,30 @@
     <section>
         <h2>Clique no local da avaria👇🏻:</h2>
         <div id="container">
-            <img src="frente.png" alt="" usemap="#Map" />
-            <map name="Map" id="Map">
-                <area onclick="janela1()" alt="" title="Janela 1" href="#" shape="poly" coords="58,138,131,116,136,56,123,44,60,43,51,60,48,94,48,120,50,136" />
-                <area onclick="janela2()" alt="" title="Janela 2" href="#" shape="poly" coords="161,106,164,45,265,46,267,108" />
-                <area onclick="janela3()" alt="" title="Janela 3" href="#" shape="poly" coords="278,105,280,48,381,50,384,108" />
-                <area onclick="janela4()" alt="" title="Janela 4" href="#" shape="poly" coords="393,107,394,47,496,51,500,108" />
-                <area onclick="janela5()" alt="" title="Janela 5" href="#" shape="poly" coords="509,112,511,47,610,50,613,110" />
-                <area onclick="janela6()" alt="" title="Janela 6" href="#" shape="poly" coords="624,110,626,50,728,50,729,110" />
-                <area onclick="janela7()" alt="" title="Janela 7" href="#" shape="poly" coords="740,111,741,49,816,53,817,112" />
-                <area onclick="lado1()" alt="" title="Lado 1" href="#" shape="poly" coords="137,167,272,170,272,114,141,113" />
-                <area onclick="lado2()" alt="" title="Lado 2" href="#" shape="poly" coords="280,117,281,167,383,168,383,121" />
-                <area onclick="lado3()" alt="" title="Lado 3" href="#" shape="poly" coords="397,171,496,173,496,117,399,120" />
-                <area onclick="lado4()" alt="" title="Lado 4" href="#" shape="poly" coords="510,171,510,121,611,125,608,167" />
-                <area onclick="lado5()" alt="" title="Lado 5" href="#" shape="poly" coords="626,118,624,166,637,174,732,175,729,120" />
-                <area onclick="lado6()" alt="" title="Lado 6" href="#" shape="poly" coords="740,120,745,173,822,172,823,125" />
-                <area onclick="roda1()" alt="" title="Roda 1" href="#" shape="poly" coords="166,232,184,241,200,240,217,232,227,220,230,203,229,194,224,187,223,183,218,179,211,175,204,173,199,171,192,171,184,173,177,177,170,181,164,186,162,193,161,200,159,209,160,215,160,224" />
-                <area onclick="roda2()" alt="" title="Roda 2" href="#" shape="poly" coords="570,213,574,227,581,236,588,239,601,245,616,245,628,239,636,232,641,222,645,213,645,204,640,196,634,188,632,181,625,179,616,178,607,175,601,178,595,180,594,177,590,180,586,187,581,193,577,200" />
-                <area onclick="parabrisa()" alt="" title="Parabrisa" href="#" shape="poly" coords="22,157,36,129,45,35,38,21,28,68" />
-                <area onclick="retrovisor()" alt="" title="Retrovisor" href="#" shape="poly" coords="33,37,13,38,22,92" />
-                <area onclick="traseira()" alt="" title="Traseira" href="#" shape="poly" coords="826,213,854,207,853,28,829,23,824,25,831,47" />
-                <area onclick="teto()" alt="" title="Teto" href="#" shape="poly" coords="51,34,52,16,821,23,821,41" />
-                <area onclick="inferior2()" alt="" title="Inferior 2" href="#" shape="poly" coords="240,212,236,175,566,177,562,214" />
-                <area onclick="inferior3()" alt="" title="Inferior 3" href="#" shape="poly" coords="652,217,650,179,822,180,820,211" />
-                <area onclick="inferior1()" alt="" title="Inferior 1" href="#" shape="poly" coords="149,210,155,174,41,172,31,184,26,198,30,206,34,210" />
-                <area onclick="lado()" alt="" title="Lado" href="#" shape="poly" coords="36,134,58,141,133,120,133,164,120,169,86,169,58,168,44,167,22,187,22,168" />
-               
-            </map>
+          <img src="frente.png" usemap="#image-map">
+
+          <map name="image-map">
+              <area onclick="paraBrisaDir()" target="" alt="Para-brisa Direito" title="Para-brisa Direito" href="#" coords="119,141,121,53,45,51,39,67,36,97,36,120,42,138" shape="poly">
+              <area onclick="paraBrisaEsq()" target="" alt="Para-brisa Esquerdo" title="Para-brisa Esquerdo" href="#" coords="122,54,121,142,196,141,205,132,203,59,195,54,127,50" shape="poly">
+              <area onclick="farolDir()" target="" alt="Farol Direito" title="Farol Direito" href="#" coords="34,157,44,160,72,180,66,189,44,179,33,173" shape="poly">
+              <area onclick="farolEsq()" target="" alt="Farol Esquerdo" title="Farol Esquerdo" href="#" coords="175,189,165,181,194,161,206,159,206,174,180,189" shape="poly">
+              <area onclick="paraChoque()" target="" alt="Para-Choque" title="Para-Choque" href="#" coords="33,175,61,189,75,190,112,193,151,192,172,191,191,184,205,176,207,183,203,211,36,208" shape="poly">
+              <area onclick="console()" target="" alt="Console" title="Console" href="#" coords="35,133,35,155,46,160,72,178,69,188,91,189,107,191,121,191,170,189,165,181,192,159,208,156,207,135,197,143,44,140" shape="poly">
+              <area onclick="bandeira()" target="" alt="Bandeira" title="Bandeira" href="#" coords="52,26,49,42,193,46,193,25,126,21,63,23" shape="poly">
+              <area onclick="retrovisorEsq()" target="" alt="Retrovisor Esquerdo" title="Retrovisor Esquerdo" href="#" coords="205,33,217,41,218,53,226,56,226,82,214,86,213,56,210,46,206,39" shape="poly">
+              <area onclick="retrovisorDir()" target="" alt="Retrovisor Direito" title="Retrovisor Direito" href="#" coords="19,82,30,83,32,54,32,44,38,40,39,32,31,34,26,43,23,52,18,55,18,69" shape="poly">
+          </map>
         </div>
         
 
         <div id = "dados">
             <input type="button" value="Limpar" class="bt bt-limpar" onclick="limpar()">
-        <input type="button" value="Continuar" class="bt bt-continuar" onclick="continuar()">
+            <input type="button" value="Continuar" class="bt bt-continuar" onclick="continuar()">
         </div>
-        <div id= "resultados">
-        <div id = "res" class="resultados"></div>
+
+      <div id= "resultados">
         <div id = "res2" class="resultados"></div>
+        <div id = "res" class="resultados"></div>
         <div id = "res3" class="resultados"></div>
         <div id = "res4" class="resultados"></div>
         <div id = "res5" class="resultados"></div>
@@ -58,21 +45,7 @@
         <div id = "res7" class="resultados"></div>
         <div id = "res8" class="resultados"></div>
         <div id = "res9" class="resultados"></div>
-        <div id = "res10" class="resultados"></div>
-        <div id = "res11" class="resultados"></div>
-        <div id = "res12" class="resultados"></div>
-        <div id = "res13" class="resultados"></div>
-        <div id = "res14" class="resultados"></div>
-        <div id = "res15" class="resultados"></div>
-        <div id = "res16" class="resultados"></div>
-        <div id = "res17" class="resultados"></div>
-        <div id = "res18" class="resultados"></div>
-        <div id = "res19" class="resultados"></div>
-        <div id = "res20" class="resultados"></div>
-        <div id = "res21" class="resultados"></div>
-        <div id = "res22" class="resultados"></div>
-        <div id = "res23" class="resultados"></div>
-    </div>
+      </div>
         
     </section>
     <footer>

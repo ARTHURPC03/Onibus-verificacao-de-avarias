@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traseira</title>
+    <link rel="stylesheet" href="traseira.css">
+</head>
+<body>
+    <header>
+        <h1>Traseira</h1>
+    </header>
+    <section>
+        <h2>Clique no local da avaria👇🏻:</h2>
+        <div id="container">
+          <img src="TraseiraBus.png" usemap="#image-map">
+
+          <map name="image-map">
+              <area onclick="traseira1()" target="" alt="Traseira 1" title="Traseira 1" href="#" coords="34,13,31,75,164,75,163,14,98,5" shape="poly">
+              <area onclick="traseira2()" target="" alt="Traseira 2" title="Traseira 2" href="#" coords="32,76,32,108,28,114,36,137,158,138,166,114,162,108,164,76" shape="poly">
+              <area onclick="traseiraEsq()" target="" alt="Traseira Esquerda" title="Traseira Esquerda" href="#" coords="33,12,30,109,20,123,18,132,20,151,12,156,13,114,17,21,23,14" shape="poly">
+              <area onclick="traseiraDir()" target="" alt="Traseira Direita" title="Traseira Direita" href="#" coords="164,12,180,20,181,156,172,152,177,133,173,122,164,108" shape="poly">
+              <area onclick="farolEsq()" target="" alt="Farol Esquerdo" title="Farol Esquerdo" href="#" coords="42,161,21,156,18,131,21,119,30,116,36,140" shape="poly">
+              <area onclick="farolDir()" target="" alt="Farol Direito" title="Farol Direito" href="#" coords="151,160,166,116,177,128,170,157,161,160" shape="poly">
+              <area onclick="traseira3()" target="" alt="Traseira 3" title="Traseira 3" href="#" coords="36,139,158,139,150,162,42,162" shape="poly">
+              <area onclick="traseira4()" target="" alt="Traseira 4" title="Traseira 4" href="#" coords="15,185,45,184,148,185,179,187,180,158,171,153,151,163,41,162,20,156,12,156" shape="poly">
+          </map>
+        </div>
+        
+
+        <div id = "dados">
+            <input type="button" value="Limpar" class="bt bt-limpar" onclick="limpar()">
+            <input type="button" value="Continuar" class="bt bt-continuar" onclick="continuar()">
+        </div>
+
+      <div id= "resultados">
+        <div id = "res" class="resultados"></div>
+        <div id = "res2" class="resultados"></div>
+        <div id = "res3" class="resultados"></div>
+        <div id = "res4" class="resultados"></div>
+        <div id = "res5" class="resultados"></div>
+        <div id = "res6" class="resultados"></div>
+        <div id = "res7" class="resultados"></div>
+        <div id = "res8" class="resultados"></div>
+        <div id = "res9" class="resultados"></div>
+      </div>
+        
+    </section>
+    <footer>
+        <p>&copy; ARTHURPC</p>
+    </footer>
+    <script src="traseira.js"></script>
+</body>
+</html>
